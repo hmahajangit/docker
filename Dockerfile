@@ -8,7 +8,7 @@ FROM nginx
 # nginx config
 COPY index.html /usr/share/nginx/html
 
-echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Expose HTTP
 EXPOSE 80
